@@ -26,7 +26,7 @@ public class Consumer2 {
             final int numMessages = 10;
 
             for (int i = 0; i < numMessages; i++) {
-                TextMessage message0 = (TextMessage) consumer.receive(5000);
+                TextMessage message0 = (TextMessage) consumer.receive(50000);
                 System.out.println("Got message: " + message0.getText() + " from node 0");
             }
         }finally {
