@@ -45,9 +45,6 @@ public class Consumer2 {
             if(connection != null){
                 connection.close();
             }
-            if(initialContext != null){
-                initialContext.close();
-            }
         }
     }
 }
